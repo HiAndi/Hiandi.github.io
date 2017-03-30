@@ -116,15 +116,15 @@ function timeElapse(date){
 
 function showMessages() {
 	adjustWordsPosition();
-	$('#messages').fadeIn(5000, function() {
+	$('#messages').fadeIn(50000, function() {
 		showLoveU();
 	});
 }
 
 function adjustWordsPosition() {
 	$('#words').css("position", "absolute");
-	$('#words').css("top", $("#garden").position().top + 195 + 50);
-	$('#words').css("left", $("#garden").position().left + 70 + 30);
+	$('#words').css("top", $("#garden").position().top + 195);
+	$('#words').css("left", $("#garden").position().left + 70);
 }
 
 function adjustCodePosition() {
