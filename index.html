@@ -1,8 +1,8 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Bye Andi</title>
+<title>For Andi</title>
 
 <style type="text/css">
 @font-face {
@@ -26,8 +26,7 @@
 <div id="mainDiv">
 	<div id="content">
 		<div id="code">
-
-			<span class="keyword"> Bye </span><br />
+			<span class="keyword"> Happy Birthday to you！ </span><br />
 		</div>
 	</div>
 </div>
@@ -40,7 +39,6 @@ together.setHours(0);
 together.setMinutes(0);
 together.setSeconds(0);
 together.setMilliseconds(0);
-
 if (!document.createElement('canvas').getContext) {
 	var msg = document.createElement("div");
 	msg.id = "errorMsg";
@@ -53,22 +51,24 @@ if (!document.createElement('canvas').getContext) {
 } else {
 	setTimeout(function () {
 		startHeartAnimation();
-	}, 10);
-
+	}, 60000);
 	timeElapse(together);
 	setInterval(function () {
 		timeElapse(together);
 	}, 500);
-
 	adjustCodePosition();
 	$("#code").typewriter();
 }
 </script>
-
+<div style="text-align:right;clear:both">
+	<div id="copyright">
+	Inspired by <a href="http://hackerzhou.me/">hackerzhou's</a> project.<br />	
+	<p>Copyright © 2017 <a href="https://yudamon.github.io/">Damon </a></p>
+	</div>	
+</div>
 
 <style type="text/css">
 body {
  background-image: url(http://octknctrc.bkt.clouddn.com/bg1.jpg);
 }
 	</style>
-
